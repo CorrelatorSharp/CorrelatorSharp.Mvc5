@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorrelatorSharp.Mvc5", "CorrelatorSharp.Mvc5\CorrelatorSharp.Mvc5.csproj", "{8C553367-71A0-42FE-9782-FE8E8515657B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorrelatorSharp.Mvc5.Sample", "CorrelatorSharp.Mvc5.Sample\CorrelatorSharp.Mvc5.Sample.csproj", "{37479851-31C6-42C4-A43F-ECF5145D2FE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{931E746C-84E8-4C39-B7BD-8288EFC2748D}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C553367-71A0-42FE-9782-FE8E8515657B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C553367-71A0-42FE-9782-FE8E8515657B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C553367-71A0-42FE-9782-FE8E8515657B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C553367-71A0-42FE-9782-FE8E8515657B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37479851-31C6-42C4-A43F-ECF5145D2FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37479851-31C6-42C4-A43F-ECF5145D2FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37479851-31C6-42C4-A43F-ECF5145D2FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37479851-31C6-42C4-A43F-ECF5145D2FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
