@@ -3,7 +3,7 @@
 }
 
 <script>
-    $(function() {
+    $(function () {
         $("#sendRequest").on("click", function () {
             $.ajax({
                 url: encodeURI('/home/test'),
@@ -13,7 +13,22 @@
                 },
                 data: {},
                 contentType: 'application/x-www-form-urlencoded',
-                success: function (data) { alert("server responded with correlation id: " + data); },
+                success: function (data) { alert("server responded with correlation id: " + JSON.stringify(data, null, 2)); },
+                error: function () { },
+            });
+        });
+
+        $("#sendRequestWithParent").on("click", function () {
+            $.ajax({
+                url: encodeURI('/home/test'),
+                type: 'POST',
+                beforeSend: function (xhr) {
+                    xhr.setRequestHeader('X-Correlation-Id', '1234');
+                    xhr.setRequestHeader('X-Correlation-Parent-Id', '5678');
+                },
+                data: {},
+                contentType: 'application/x-www-form-urlencoded',
+                success: function (data) { alert("server responded with correlation id: " + JSON.stringify(data, null, 2)); },
                 error: function () { },
             });
         });
@@ -22,4 +37,7 @@
 
 <div>
     <button id="sendRequest">Send Request with Correlation Id "1234"</button>
+</div>
+<div>
+    <button id="sendRequestWithParent">Send Request with Correlation Id "1234" and parent Id "5678"</button>
 </div>
